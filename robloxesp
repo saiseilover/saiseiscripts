@@ -1,0 +1,7 @@
+local highlight = Instance.new("Highlight")
+local players = game.Players:GetPlayers()
+
+for _, player in ipairs(players) do
+    local highlightClone = highlight:Clone()
+    highlightClone.Parent = player.Character
+end
